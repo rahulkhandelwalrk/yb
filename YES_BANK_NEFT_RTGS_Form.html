@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YES BANK NEFT/RTGS Form</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Arial,sans-serif;font-size:11px;background:#e8edf3;color:#000;}
+.outer{padding:14px 0 24px;}
+.page{width:780px;margin:0 auto;background:#fff;padding:12px 20px;box-shadow:0 3px 16px rgba(0,0,0,0.15);}
+.header-bar{display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #003087;padding-bottom:8px;margin-bottom:8px;}
+.logo-wrap{display:flex;align-items:center;}
+.logo-wrap img{height:40px;display:block;}
+.red-bar{width:4px;background:#c00;height:42px;margin-left:10px;border-radius:1px;}
+.header-title{text-align:right;}
+.header-title .h1{font-size:13px;font-weight:700;color:#003087;line-height:1.4;}
+.header-title .h2{font-size:10px;color:#555;margin-top:1px;}
+.sec-bar{background:#003087;color:#fff;font-weight:700;font-size:9.5px;padding:3px 7px;margin:5px 0 0;}
+table{border-collapse:collapse;width:100%;}
+td,th{border:1px solid #333;padding:2px 5px;vertical-align:middle;font-size:10px;}
+.lb{background:#dde4f0;font-weight:700;font-size:9px;vertical-align:middle;line-height:1.3;}
+input[type=text],input[type=tel],textarea{border:none;outline:none;width:100%;font-size:10px;font-family:Arial,sans-serif;background:transparent;padding:1px 2px;}
+textarea{resize:none;height:33px;}
+.crow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.ci{display:flex;align-items:center;gap:3px;font-size:10px;white-space:nowrap;}
+.ci input[type=radio],.ci input[type=checkbox]{width:auto;}
+.dear{border:1px solid #333;padding:5px 7px;margin:5px 0;font-size:10px;background:#fafbff;}
+.terms{border:1px solid #333;padding:5px 7px;margin-top:5px;font-size:8.8px;line-height:1.55;background:#fafbff;}
+.dotline{border-top:2px dashed #666;margin:8px 0;}
+.offbox{border:1px solid #333;padding:4px;font-size:9px;}
+.offtitle{font-weight:700;font-size:9px;text-align:center;border-bottom:1px solid #333;padding-bottom:2px;margin-bottom:3px;background:#dde4f0;}
+.stamp{border:1.5px solid #333;height:64px;width:104px;display:flex;align-items:center;justify-content:center;font-size:8px;text-align:center;color:#666;margin-top:4px;}
+.netbox{border:1.5px solid #003087;padding:5px 8px;margin-top:5px;font-size:9.5px;font-weight:700;text-align:center;background:#eef2ff;color:#003087;}
+.resp th{background:#003087;color:#fff;font-size:9px;font-weight:700;padding:3px 5px;}
+.resp td{font-size:9px;padding:3px 5px;}
+.resp tr:nth-child(even) td{background:#eef2ff;}
+.ackbar{font-weight:700;font-size:10.5px;background:#dde4f0;color:#003087;padding:3px 7px;margin-bottom:3px;border:1px solid #003087;}
+.dl-bar{text-align:center;padding:13px 0 9px;background:#fff;border-top:2px solid #003087;position:sticky;bottom:0;z-index:99;box-shadow:0 -3px 10px rgba(0,48,135,.12);}
+.dlbtn{background:#003087;color:#fff;border:none;padding:11px 36px;font-size:13px;font-weight:700;cursor:pointer;border-radius:4px;font-family:Arial,sans-serif;letter-spacing:.5px;box-shadow:0 2px 8px rgba(0,48,135,.3);}
+.dlbtn:hover{background:#002060;}
+.dlbtn:disabled{background:#888;cursor:not-allowed;}
+.pg2hdr{display:flex;align-items:center;gap:10px;margin-bottom:6px;border-top:2px dashed #666;padding-top:8px;}
+</style>
+</head>
+<body>
+<div class="outer">
+<div class="page" id="formPage">
+
+<!-- HEADER WITH LOGO -->
+<div class="header-bar">
+  <div class="logo-wrap">
+    <img src="data:image/jpeg;base64,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" alt="YES BANK Logo">
+    <div class="red-bar"></div>
+  </div>
+  <div class="header-title">
+    <div class="h1">Application for National Electronic Fund Transfer /<br>Real-Time Gross Settlement Systems (NEFT/RTGS)</div>
+    <div class="h2">Terms and Conditions</div>
+  </div>
+</div>
+
+<!-- REMITTER -->
+<div class="sec-bar">REMITTER DETAILS &nbsp;&#8212;&nbsp; All fields are MANDATORY. All details should be entered in BLOCK LETTERS.</div>
+<table>
+  <tr>
+    <td class="lb" style="width:15%;">Remitter<br>(Applicant) Name</td>
+    <td style="width:35%;"><input type="text" id="r_name"></td>
+    <td class="lb" style="width:12%;">PAN No.</td>
+    <td><input type="text" id="r_pan" style="text-transform:uppercase;"></td>
+  </tr>
+  <tr>
+    <td class="lb">Remitter<br>Account No.</td>
+    <td><input type="text" id="r_acc"></td>
+    <td class="lb">Account type</td>
+    <td>
+      <div class="crow">
+        <label class="ci"><input type="radio" name="r_at" value="Current"> Current</label>
+        <label class="ci"><input type="radio" name="r_at" value="Savings"> Savings</label>
+        <label class="ci"><input type="radio" name="r_at" value="NRE"> NRE</label>
+        <label class="ci"><input type="radio" name="r_at" value="NRO"> NRO</label>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="lb">Branch Code</td>
+    <td><input type="text" id="r_bcode"></td>
+    <td class="lb">Branch Name</td>
+    <td>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <input type="text" id="r_bname" style="flex:1;">
+        <label class="ci"><input type="radio" name="tt" value="NEFT"> NEFT</label>
+        <label class="ci"><input type="radio" name="tt" value="RTGS"> RTGS</label>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="lb">Application Date</td>
+    <td>
+      <div style="display:flex;align-items:center;gap:2px;">
+        <input type="text" id="r_dd" placeholder="DD" style="width:26px;text-align:center;">
+        <span>/</span><input type="text" id="r_mm" placeholder="MM" style="width:26px;text-align:center;">
+        <span>/</span><input type="text" id="r_yy" placeholder="YYYY" style="width:42px;text-align:center;">
+      </div>
+    </td>
+    <td class="lb">Mobile Number</td>
+    <td>
+      <div style="display:flex;align-items:center;gap:4px;">
+        <b style="color:#003087;">+91</b>
+        <input type="tel" id="r_mob" style="flex:1;">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="lb">Cash Deposited<br>(Non&#8211;Customer)<br><span style="font-weight:400;font-style:italic;font-size:8px;">Only in case of NEFT</span></td>
+    <td>
+      <div class="crow">
+        <label class="ci"><input type="radio" name="r_ct" value="Cash"> Cash</label>
+        <label class="ci"><input type="radio" name="r_ct" value="Cheque"> Cheque</label>
+        <label class="ci"><input type="radio" name="r_ct" value="Debit"> Debit my/our account</label>
+      </div>
+    </td>
+    <td class="lb">PIN Code</td>
+    <td><input type="text" id="r_pin" maxlength="6"></td>
+  </tr>
+  <tr>
+    <td class="lb">Address<br><span style="font-weight:400;font-style:italic;font-size:8px;">(Optional for YES Bank Customer)</span></td>
+    <td colspan="3"><textarea id="r_addr"></textarea></td>
+  </tr>
+  <tr>
+    <td class="lb">Cheque No.</td>
+    <td><input type="text" id="r_chqno"></td>
+    <td class="lb">Cheque Date</td>
+    <td>
+      <div style="display:flex;align-items:center;gap:2px;">
+        <input type="text" id="c_dd" placeholder="DD" style="width:26px;text-align:center;">
+        <span>/</span><input type="text" id="c_mm" placeholder="MM" style="width:26px;text-align:center;">
+        <span>/</span><input type="text" id="c_yy" placeholder="YYYY" style="width:42px;text-align:center;">
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- DEAR SIR -->
+<div class="dear">
+  <div style="margin-bottom:4px;">The Branch Manager, &nbsp;<input type="text" id="bm" style="border-bottom:1px solid #003087;width:220px;display:inline-block;"> &nbsp; Branch</div>
+  <div style="display:flex;gap:12px;align-items:center;margin-bottom:4px;">
+    <label class="ci"><input type="radio" name="pm" value="Cash"> Cash</label>
+    <label class="ci"><input type="radio" name="pm" value="Cheque"> Cheque</label>
+    <label class="ci"><input type="radio" name="pm" value="Debit"> Debit my / our account</label>
+  </div>
+  <div><b>Dear Sir,</b></div>
+  <div style="margin-top:4px;">
+    Please remit through NEFT/RTGS a sum of &#8377;&nbsp;<input type="text" id="amt" style="border-bottom:1px solid #003087;width:110px;display:inline-block;">
+    &nbsp;(Rupees in words)&nbsp;<input type="text" id="amtw" style="border-bottom:1px solid #003087;width:280px;display:inline-block;">&nbsp;only as per details given below.
+  </div>
+</div>
+
+<!-- BENEFICIARY -->
+<div class="sec-bar">BENEFICIARY DETAILS &nbsp;&#8212;&nbsp; All fields are MANDATORY (Address required for Indo-Nepal remit only). BLOCK LETTERS.</div>
+<table>
+  <tr>
+    <td class="lb" style="width:15%;">Beneficiary Name</td>
+    <td style="width:35%;"><input type="text" id="b_name"></td>
+    <td class="lb" style="width:14%;">Beneficiary<br>Account type</td>
+    <td>
+      <div class="crow">
+        <label class="ci"><input type="radio" name="b_at" value="Current"> Current</label>
+        <label class="ci"><input type="radio" name="b_at" value="Savings"> Savings</label>
+        <label class="ci"><input type="radio" name="b_at" value="NRE"> NRE</label>
+        <label class="ci"><input type="radio" name="b_at" value="NRO"> NRO</label>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="lb">Beneficiary<br>Account No.</td>
+    <td><input type="text" id="b_acc"></td>
+    <td class="lb">Re-confirm<br>Beneficiary<br>Account No.</td>
+    <td><input type="text" id="b_acc2"></td>
+  </tr>
+  <tr>
+    <td class="lb">Beneficiary Bank</td>
+    <td><input type="text" id="b_bank"></td>
+    <td class="lb">IFSC code</td>
+    <td><input type="text" id="b_ifsc" style="text-transform:uppercase;"></td>
+  </tr>
+  <tr>
+    <td class="lb">Branch Name<br>&amp; Address</td>
+    <td><textarea id="b_br"></textarea></td>
+    <td class="lb">Beneficiary<br>Mobile No.</td>
+    <td>
+      <div style="display:flex;align-items:center;gap:4px;">
+        <b style="color:#003087;">+91</b>
+        <input type="tel" id="b_mob" style="flex:1;">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="lb">Purpose of<br>Remittance</td>
+    <td><input type="text" id="b_pur"></td>
+    <td class="lb">Message from<br>Sender to Receiver</td>
+    <td><input type="text" id="b_msg"></td>
+  </tr>
+  <tr>
+    <td class="lb">Address</td>
+    <td colspan="3"><textarea id="b_addr"></textarea></td>
+  </tr>
+  <tr>
+    <td class="lb">LEI Number</td>
+    <td colspan="3">
+      <div style="display:flex;align-items:center;gap:8px;">
+        <input type="text" id="b_lei" style="width:250px;">
+        <span style="font-size:8.5px;color:#555;">(Mandatory for transaction of Rs.50.00 Crore or above for Non-Ind Entities)</span>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- NAME LOOKUP -->
+<table style="margin-top:3px;">
+  <tr>
+    <td class="lb" style="width:22%;">Beneficiary Name as<br>per Branch Look Up</td>
+    <td><input type="text" id="b_lu"></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding:5px 7px;">
+      <div style="display:flex;align-items:flex-start;gap:5px;margin-bottom:4px;">
+        <input type="checkbox" id="ck1" style="width:auto;margin-top:2px;">
+        <label for="ck1" style="font-size:9.5px;">I/We are aware that there is mismatch in Beneficiary Name as provided by me/us on form and as appearing in the Beneficiary Bank's database. However I/we still wish to proceed with the transaction.</label>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:5px;">
+        <input type="checkbox" id="ck2" style="width:auto;margin-top:2px;">
+        <label for="ck2" style="font-size:9.5px;">I/We are aware that Beneficiary Name lookup has failed with Response code*&nbsp;<input type="text" id="rcode" style="border-bottom:1px solid #003087;width:115px;display:inline-block;">.&nbsp;However, I/we still wish to proceed with the transaction.</label>
+      </div>
+      <div style="font-size:8px;margin-top:3px;font-style:italic;color:#555;">*For list of Response codes see overleaf</div>
+    </td>
+  </tr>
+</table>
+
+<!-- SIGNATURE + OFFICE USE -->
+<table style="margin-top:3px;">
+  <tr>
+    <td style="width:57%;padding:6px 8px;vertical-align:top;">
+      <div style="font-weight:700;color:#003087;margin-bottom:3px;font-size:9.5px;">Signature of Applicant/s</div>
+      <div style="margin-top:42px;border-top:1px solid #333;width:175px;font-size:8px;padding-top:2px;color:#666;">Authorized Signature</div>
+    </td>
+    <td style="width:43%;padding:0;vertical-align:top;">
+      <div class="offbox">
+        <div class="offtitle">FOR OFFICE USE ONLY</div>
+        <div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:3px;">
+          <label class="ci" style="font-size:8.5px;"><input type="checkbox"> NRE Transaction (40)</label>
+          <label class="ci" style="font-size:8.5px;"><input type="checkbox"> Walk in Customer (50)</label>
+          <label class="ci" style="font-size:8.5px;"><input type="checkbox"> Indo Nepal (51)</label>
+          <label class="ci" style="font-size:8.5px;"><input type="checkbox"> Credit Card Payment (52)</label>
+        </div>
+        <div style="display:flex;gap:12px;font-size:9px;margin-bottom:3px;">
+          <span>Maker ______</span><span>Checker ______</span><span>Verifier ______</span>
+        </div>
+        <div style="display:flex;justify-content:flex-end;">
+          <div class="stamp">Bank Seal<br>with date &amp; Time<br>of Request</div>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- ACK SLIP -->
+<div class="dotline"></div>
+<div class="ackbar">Customer Acknowledgement</div>
+<table>
+  <tr>
+    <td class="lb" style="width:16%;">Date</td>
+    <td><input type="text" id="ak_dt" placeholder="DD / MM / YYYY"></td>
+    <td class="lb" style="width:22%;">Reference No.</td>
+    <td><input type="text" id="ak_ref"></td>
+  </tr>
+  <tr>
+    <td class="lb" colspan="2">Beneficiary Name as per Branch Look Up</td>
+    <td colspan="2"><input type="text" id="ak_bl"></td>
+  </tr>
+  <tr>
+    <td class="lb">Branch</td>
+    <td><input type="text" id="ak_br"></td>
+    <td class="lb">Name &amp; Signature of Bank Official</td>
+    <td><input type="text" id="ak_off"></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="font-size:9px;padding:3px 6px;background:#f5f7ff;">We acknowledge receipt of NEFT / RTGS instruction(s).</td>
+  </tr>
+</table>
+
+<!-- TERMS -->
+<div class="terms">
+  <div style="font-weight:700;color:#003087;margin-bottom:3px;">Terms &amp; Conditions:</div>
+  <p style="margin-bottom:3px;">1. I/We hereby authorize YES BANK to carry out the RTGS/NEFT as per the details mentioned above. 2a. I/We agree that the credit will be affected on the basis of the beneficiary account number and the beneficiary name provided by me/us. 2b. I/We confirm that consent has been provided for processing of transaction in case of beneficiary name mismatch or if the beneficiary name look-up has failed. 3. I/We hereby agree that the aforesaid details including the IFS code and beneficiary details are correct. I/We further acknowledge that YES BANK accepts no liability for any consequences arising out of erroneous details provided by me/us. 4. I/We authorize the bank to debit my/our account for the charges plus taxes as applicable. 5. I/We understand that the RTGS/NEFT request is subject to RBI regulations and guidelines. 6. Remitting Bank shall not be liable for any loss or damage arising from delay in transmission, delivery or non-delivery of Electronic message, or any mistake, omission, or error in transmission or recovery thereof. 7. Requests received after the cut-off time shall be sent in the next batch/day. 8. This transfer is valid for a single transaction. 9. The fund transfer will be governed by the terms and conditions on our website www.yesbank.in. 10. Transfer of an amount up to Rs.50,000 including charges is permissible in cash using NEFT facility. 11. Please do not disclose your Internet Banking/Mobile Banking user ID and passwords, PIN and CVV for ATM/Credit Card and any sensitive personal information to any person. 12. Do not fall prey to false promise; beware of dubious schemes.</p>
+  <p style="font-weight:700;margin-bottom:2px;">Specific to NEFT transactions:</p>
+  <p>1. I/We have read and understood the obligations prescribed under Chapter 6 of the NEFT procedural guidelines. 2. I/We agree that in case we do not have an account with the bank, we will produce the original ID document while giving the request and comply with the KYC policies. 3. For Non-YES BANK customers the maximum limit for NEFT transactions including charges shall be Rs.50,000. 4. For Indo-Nepal Transactions, the maximum limit is Rs.2,00,000 (non-cash) and Rs.50,000 (cash). 5. I/We understand that as per RBI Circular dated October 14, 2010, transfer of funds through electronic mode will be executed only on the basis of the beneficiary account number.</p>
+  <div style="margin-top:4px;font-weight:700;color:#003087;">I / We have read the above mentioned terms &amp; conditions and agree with the same.</div>
+</div>
+
+<div class="netbox">Make your next RTGS / NEFT transfer faster via YES BANK NetBanking (YES Online) or Mobile Banking (IRIS by YES BANK) from your home / office.</div>
+
+<!-- PAGE 2: RESPONSE CODES -->
+<div class="pg2hdr">
+  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABCAPADASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAUHBAYIAgMB/8QARxAAAQMDAwIDBAUGCQ0AAAAAAQIDBAAFEQYHEiExE0FRCBQiYRU3cXWzFjJCUoGRF0NVVoKUodHTIyQzYnJ0hZWktMHD0v/EABwBAQACAwEBAQAAAAAAAAAAAAABBAIDBgUIB//EADMRAAIBAgQDBQcDBQAAAAAAAAABAgMRBBIhMQVBcRMiMlFhBhQjNIGx0TNS8EKRocHS/9oADAMBAAIRAxEAPwDsulKUApSlAKUpQClKUApSlAKUpQClKUApSlAKUpQClKUApSlAKUpQClKUApSlAKVy1rbdjX9u1nfLfCv/AIUaLcZDLKPc2DxQlxSUjJRk4AHeoj+GXcn+cf8A0Uf/AA6oPiFJO1n/AD6nYU/YnH1IKanCzV93/wAnXlKUq+ceKUpQClKUAqOuF3jxrrEtTY8edKytLKT1Q0D8TqvRI7D1JAHy17dPX1v0RagopEu6yRxhw0nqs9uSsdQkH9/YfL1thp+4W23PXnULpkaiuxD01xX8UP0GU+iUg9h5k/Ksc13ZHowwLhhveq2kXpFfufN9FzfnovNbhSqn3I3ek6G11Gsd004FWyR4biJ6ZRyWicLVw4d0nPw58h61vustSwNM6Qm6kkrS7GjMeIgJV/pVHohIP+sSBn51alhasVFteLb1PLVSLvrsTdKpmx70XS47eX/Wa9JNsQ7UtpptJnE+8OLcSlQB4dOIWDnr3ArVR7Tkk9tFtn/iJ/w6sR4XiptqMdtHqvya3iaatd7nSFKqPaveN3WUi7OzrA1aLXaoZkyphllwI9BjgO4Cz/RrWLz7TMNqatu0aVdlRkkhL0iWGlLHrxCFY/fUR4ZipTcFHVb6oPE00s1zoOlVfsruu7uLcrjDcsaLb7mylwKTKLvPJxjHEYrftVXQ2TS91vQZD5gQnpQaKuPPw0FXHODjOMZxVarh6lKp2U1qbI1IyjmWxJUrnBHtMzF54aJQrHfFwJ/9dbRtrv3btU6kj2G6WVdpflL8OO6mR4qFLPZKvhSUk9h36+lWqnCsVTi5ShovVfk1xxNKTsmXPSorWF7j6b0vcr9KTybgx1O8M45kD4U58iTgftqsNp98Ua21g1p6VYkWxT7K1MOCX4nNaRy444D9EKOc+VV6eFq1acqkVdLczlVjGSi3qy5KVp+7mtF6D0l9PItybgfeEM+EXvD/ADs9c4Pp6U2n17bdwNOfSURsRpbKvDlxCvkplXl1wMpI6g49R3BrH3ep2XbW7u1ye0jmyX1NwpVVaz3cd09upC0SmwokpkvRm/ejKKSnxVAZ48TnGfXrTWu7junN0YWik2FElMp2M2ZRlFJT4qgM8eJzjPr1rbHA15WtHdX3Wxi60FfX0LVpWlbt7iWvb6yIlSUCXPkHjFhpc4qcx3UTg8Uj1x3wKy9r9SXjVmmkXy6WFNmbkHlFb94LinG/1zlKcA+XqOvbFavd6ipdq13TLtI5svM2qlKVpMziPcn6xNS/e0r8ZVQFT+5P1ial+9pX4yqgK5ip4mfQOD+Xp9F9jvulKV058/HiQ6hhhx9zlwbSVK4pKjgfIdT+yqvuW++hoc8xEou0kJVxU61FCUpOcHIWpKv7KtOq33a2ysepWXby1a5Dl1aQSUQ5CI6pPyUVIUCrHbIGexPbGE81u6evwZcPlWyY5Ss9mmlbrf730Nz0xqKzamtouNkntTI5OCU5CkH0Uk9Un5EVA7rbgW3Qtm8V3jIub6T7pEz1Uf1leiB6+fYfLnvSGtLTt9c50qyWm8LuLjRjLj3GQkNtEKBJUlKQVKBGMdMZNRWn4F/3S3CS3LkuPSZS/ElSCPhYZHcgdgAOgHqQK0uu2rLc62j7HUqWJlXxEmsPFX1td+mnL158kWRsVp25a11Y/uJqpapKWXf818QdHHR5geSEeQHn9hroSsOyWyFZrTFtVuZDMWK2G2kDyA9fUnuT5k1mVuhDKrHIcZ4m+I4l1ErQWkV5RWy/JWntFaK/K7QTr0RrndLXykxcD4lpx/lG/wBoGQPVKa5yl6x1DrTSOmNumG1uuR5HhJVy6v5wlkH0CAVD0xg+VdsVynsbGjp9pG4NpYbCGH5/hJCRhGFKAx6dCRXRcLxFqE8yvk7y/wAnOYmHfVv6tGWbuxpyHpP2abhYIWC3FZjpWvGC4syGytZ+1RJqpdn952dA6TXY16eXcCqUt/xUyw3+cEjGOB/V9avX2kvqV1B9kf8A7hqqN2d3liaC0kuxv2B6epUpb/iokhAwoJGMFJ/VrZgYuvg5ZoZ25Xte3Ja3MazUKqs7aFz2i9q3l2hviYkL6JdkF2G2lx7xBzSlC0kkJGASoA9O2ao/Q+qNT7MXGZbb9pBLjEpwFwPo4KJSMZbdAKVJ+XUfZ1q4NG74w9R26/zG9OvxhZreucpJkhXihP6I+EY+2tUuHtH2WfDdiTdDrlMOJwtp6UhSFfIgoNY4enXg50uxvBvVX2+pNSUHaWfXzsWntduPpfXbLqbOFxZzKAp+G8gJcSnOOQx0UnPmO2RkDIqU3S+rLVP3NL/BXXPvsq2S5zdxJep2IK4doaZeTkA+GVLI4tJJ/Ox3+XEZ7iugt0vqy1T9zS/wV1RxeHp4fFqFN6afT0N1KpKdJuRyxsjukxt1GujL1mcuPvy2lAokBvhwCh5pOc8qz9N3WBuR7QUC+yTCsDJksvpZW5lTy2uPFAVgArUQO+OnbJxnG2K3Qt+3cW7MzrXJnGctpSSytKePAKBzn/arH1ve5W7e50F7TFjchSVIbZTx+JZKVEl1wpHTGe/kEjrXQzpfHqSyZbrx39FyKCl3Iq99di2va/1F7lpG36cZcw7cn/FeAP8AFNYOD9qyk/0TVa6805I2tuegdRRGSh4RGnZSR+lIQoLdST8w4E/YDWXuO1I3R9oU6dhyy0xHV7ih8I5hpLQUp1eMjPxc/MZ6VK7p7L3y0aLnXx/XE6/fR6Q97q+woDjkBSgS4rGASe3YVVwzp4aFKlOVnLVqz1zaLobamapKU0tv9G9e1JKYnbMsTYrgcYkS47rSx2UlSVEH9xqh9B3PUe20qx62YaU5arolxC0JPwPIQ4pC21eixx5A/Md+ora7nqL6c9lePDdc5SbTdGoi8nrwwpTZ+zieP9GrL2g0vbNYezhbLFdW8sve8FDgHxMuCQ7xWn5j+0ZHY1hCSwWGcKivHO0+lv4yWnWqXi9bXKv1/ebfqD2htN3m1SA/DlSLattY7/npyCPIg5BHkQa9e0PcBaN/411U0XRCEOQWwcc+BCsZ8s4rUrdpm56R3ostiurfF9i8ReKwPhdQXk8Vp9QR/wCR3Brc9+Yce4+0Zb7fLQVx5TkFl1IJGUKUARkduhNW4xhCtBJ3ioP+2hqbk4Sb3uiP21cjbrb0CbreehXJJdYhnPB7h1Swn0SBkkdzg+ZJrrtCUoSEISEpSMAAYAFc6+0Zt0bGYuvNHMe4mD4YlNRU8fB4YDbyQO2MAH9h9TVqbM68ja90k3OJQ3co2Gp7Cf0V46KA/VV3H7R5V43Efj0oV6XgWlv2suYfuScJb79Td6UpXjFs4j3J+sTUv3tK/GVUBU/uT9YmpfvaV+MqoCuYqeJn0Dg/l6fRfY77pSldOfPwpSlAaJrzanSesJ/0jOakxJpADj8RYQpwD9YEEE46Zxn91S2gtD6f0VDcj2WMsOPY8aQ8rm65jtk4AAGewAFbLSsckU72L0+J4yeHWGlUbguV9BSlKyKIrEj2u2R5Spce3Q2ZCslTqGEpWc9+oGetZdKlNrYWPlKjx5bCo8php9leOTbiApJwc9QenesH8ndP/wAhWv8Aqjf91SdKlSktmQ0mYMezWiOh1DFqgtJdTwcCI6EhafQ4HUfKvkNPWAHIsdsB/wB0R/dUnSmeXmLI/EIShAQhISlIwEgYAFfjzbbzS2Xm0uNrSUrQoZCge4I8xXqlYkkZ+Tun/wCQrX/VG/7qy4MCDBQpEGHHipUcqDLSUA/bgVkUrJzk92RZIw41qtkaUZUa2w2X1Zy62wlKznv1Az1rKebbeaW062lxtaSlaFDIUD3BHmK9UqG29ybEemyWVLC2E2i3pZWQpbYjI4qI7EjGDjJ/fWXEjR4jCY8VhqOynPFtpASkZOTgDp3r60o5N7siyMaTb4EmS3JkwYzz7WPDccaSpSMHIwSMjr1ry/a7Y/LTMft0R2SkgpeWylSwR2wojPSsulMz8xZHl1tt5pbTqEuNrSUqQoZCge4I8xWPBtlugKUqDb4kVSxhRZZSgq+3A61lUpd2sTYUpSoBxHuT9YmpfvaV+MqoCp/cn6xNS/e0r8ZVQFcxU8TPoHB/L0+i+x33SlK6c+fhSlKAUpSgFKUoBSlKAUpSgFKUoBSlKAUpSgFKUoBSlKAUpSgFKUoBSlKAhJOj9JSZLsmTpeyPPurK3HHIDSlLUTkqJKckk9c18/yJ0Z/NGwf8tZ/+aUry5bs/QKP6ceiP/9k=" alt="YES BANK" style="height:28px;">
+  <div style="flex:1;font-weight:700;font-size:11px;color:#003087;text-align:center;">List of Response Codes</div>
+</div>
+<table class="resp">
+  <tr>
+    <th style="width:5%;">Sr. No.</th>
+    <th style="width:10%;">Response Code</th>
+    <th style="width:28%;">Description</th>
+    <th>Reason of Error</th>
+  </tr>
+  <tr><td style="text-align:center;">1</td><td style="text-align:center;font-weight:700;">UB</td><td>UNABLE TO PROCESS</td><td>Technical issue at beneficiary member end, unable to fetch beneficiary bank account name.</td></tr>
+  <tr><td style="text-align:center;">2</td><td style="text-align:center;font-weight:700;">12</td><td>ACCOUNT NOT FOUND</td><td>Account is not found in member record.</td></tr>
+  <tr><td style="text-align:center;">3</td><td style="text-align:center;font-weight:700;">08</td><td>HOST (CBS) OFFLINE</td><td>Member CBS is unavailable, unable to fetch beneficiary bank account name.</td></tr>
+  <tr><td style="text-align:center;">4</td><td style="text-align:center;font-weight:700;">M3</td><td>ACCOUNT INACTIVE</td><td>Beneficiary bank account is inactive or blocked.</td></tr>
+  <tr><td style="text-align:center;">5</td><td style="text-align:center;font-weight:700;">60</td><td>CONSENT NOT PROVIDED BY BENEFICIARY</td><td>The beneficiary has not provided consent to share the bank account name. Exercise caution before initiating a transaction.</td></tr>
+  <tr><td style="text-align:center;">6</td><td style="text-align:center;font-weight:700;">62</td><td>MAXIMUM NUMBER OF ATTEMPTS REACHED</td><td>Beneficiary has declined the transaction as multiple validation requests received from same remitter for same beneficiary in a day.</td></tr>
+  <tr><td style="text-align:center;">7</td><td style="text-align:center;font-weight:700;">MJ</td><td>INVALID BENEFICIARY IFSC</td><td>Beneficiary has declined the transaction as IFSC is invalid.</td></tr>
+  <tr><td style="text-align:center;">8</td><td style="text-align:center;font-weight:700;">E15</td><td>INVALID RESPONSE CODE</td><td>Beneficiary has sent invalid response code in response, unable to fetch beneficiary bank account name.</td></tr>
+</table>
+
+</div><!-- /formPage -->
+</div><!-- /outer -->
+
+<!-- STICKY DOWNLOAD BAR -->
+<div class="dl-bar">
+  <button class="dlbtn" onclick="downloadPDF()">&#8659; &nbsp; Download Filled Form as PDF</button>
+  <div style="font-size:9.5px;color:#777;margin-top:3px;">Fill all fields above, then click Download to save the completed YES BANK NEFT/RTGS form as PDF.</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+async function downloadPDF() {
+  const btn = document.querySelector('.dlbtn');
+  btn.innerHTML = '&#9203; Generating PDF, please wait...';
+  btn.disabled = true;
+  await new Promise(r => setTimeout(r, 120));
+  try {
+    const el = document.getElementById('formPage');
+    const canvas = await html2canvas(el, {
+      scale: 2.5,
+      useCORS: true,
+      allowTaint: true,
+      backgroundColor: '#ffffff',
+      logging: false,
+      width: el.scrollWidth,
+      height: el.scrollHeight
+    });
+    const { jsPDF } = window.jspdf;
+    const imgData = canvas.toDataURL('image/jpeg', 0.98);
+    const pdfW = 210;
+    const pdfH = (canvas.height * pdfW) / canvas.width;
+    const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: [pdfW, pdfH] });
+    pdf.addImage(imgData, 'JPEG', 0, 0, pdfW, pdfH);
+    pdf.save('YES_BANK_NEFT_RTGS_Form.pdf');
+  } catch(e) {
+    alert('PDF generation failed: ' + e.message);
+  }
+  btn.innerHTML = '&#8659; &nbsp; Download Filled Form as PDF';
+  btn.disabled = false;
+}
+</script>
+</body>
+</html>
